@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(Imágenes/portada.jpg) center/cover no-repeat;
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+main {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+h1 {
+    font-family: tan-nimbus;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.Logo {
+    width: 480px; 
+    height: auto;
+    margin: 10px 0;
+}
+
+h2 {
+    font-family: tan-nimbus;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-family: poppins;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    position: static;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    border: 1px solid #FF007B;
+    padding: 12px 0;
+    width: 720px;
+    margin: 0 auto 30px auto;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.49);
+}
+
+nav img {
+    width: 80px;
+    height: auto;
+    margin-right: 45px;
+    opacity: 0.9;
+}
+
+.menu {
+    font-family: poppins;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95em;
+}
+
+.menu a:hover {
+    color: #FF0073;
+    transition: color 0.3s ease;
+}
+
+.redes {
+    position: relative;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 40px;
+    list-style: none;
+}
+
+.redes img {
+    transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+    transform: scale(1.08);
+}
